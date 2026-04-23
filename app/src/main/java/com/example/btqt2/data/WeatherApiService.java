@@ -11,7 +11,8 @@ public interface WeatherApiService {
             @Query("lat") double lat,
             @Query("lon") double lon,
             @Query("appid") String apiKey,
-            @Query("units") String units // Truyền "metric" để lấy độ C
+            @Query("units") String units, // Truyền "metric" để lấy độ C
+            @Query("lang") String lang // Thêm cái này để có tiếng Việt
     );
 
     @GET("data/2.5/forecast")
@@ -19,6 +20,7 @@ public interface WeatherApiService {
             @Query("lat") double lat,
             @Query("lon") double lon,
             @Query("appid") String apiKey,
-            @Query("units") String units
+            @Query("units") String units,
+            @Query("lang") String lang
     );
 }
