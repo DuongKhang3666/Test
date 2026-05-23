@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3307/xettuyen2026</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>
+
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+        <property name="hbm2ddl.auto">none</property>
+        
+        <mapping class="com.example.dto.AccountDTO"/>
+        <mapping class="com.example.dto.CandidateDTO"/>
+        <mapping class="com.example.dto.BonusScoreDTO"/>
+        <mapping class="com.example.dto.ExamScoreDTO"/>
+        <mapping class="com.example.dto.MajorDTO"/>
+        <mapping class="com.example.dto.SubjectGroupDTO"/>
+        <mapping class="com.example.dto.MajorGroupDTO"/>
+        <mapping class="com.example.dto.AspirationDTO"/>
+        <mapping class="com.example.dto.ConversionTableDTO"/>
+
+        </session-factory>
+</hibernate-configuration>

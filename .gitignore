@@ -1,0 +1,28 @@
+# Build outputs
+target/
+out/
+build/
+
+# Logs
+*.log
+logs/
+
+# IDE and editor
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# Runtime PID files
+*.pid
